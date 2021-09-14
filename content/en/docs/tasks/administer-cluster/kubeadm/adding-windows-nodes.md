@@ -14,7 +14,7 @@ weight: 30
 
 {{< feature-state for_k8s_version="v1.18" state="beta" >}}
 
-You can use Kubernetes to run a mixture of Linux and Windows nodes, so you can mix Pods that run on Linux on with Pods that run on Windows. This page shows how to register Windows nodes to your cluster.
+You can use Kubernetes to run a mixture of Linux and Windows nodes, so you can mix Pods that run on Linux with Pods that run on Windows. This page shows how to register Windows nodes to your cluster.
 
 
 
@@ -46,7 +46,7 @@ If you are using VXLAN/Overlay networking you must have also have [KB4489899](ht
 
 ### Networking Configuration
 
-Once you have a Linux-based Kubernetes control-plane node you are ready to choose a networking solution. This guide illustrates using Flannel in VXLAN mode for simplicity.
+Once you have a Linux-based Kubernetes control-plane node, you are ready to choose a networking solution. This guide illustrates using Flannel in VXLAN mode for simplicity.
 
 #### Configuring Flannel
 
@@ -158,6 +158,7 @@ Install-WindowsFeature -Name containers
 ```
 
 Install Docker
+
 Instructions to do so are available at [Install Docker Engine - Enterprise on Windows Servers](https://hub.docker.com/editions/enterprise/docker-ee-server-windows).
 
 #### Install wins, kubelet, and kubeadm  
